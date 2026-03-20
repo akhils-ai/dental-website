@@ -52,13 +52,42 @@
   <script src="./Clinova - Webflow HTML website template_files/gsap.min.js.download"></script>
   <script src="./Clinova - Webflow HTML website template_files/ScrollTrigger.min.js.download"></script>
   <style>
-  .wf-force-outline-none[tabindex="-1"]:focus {
-    outline: none;
-  }
-  /* Remove Webflow badge */
-  .w-webflow-badge {
-    display: none !important;
-  }
+.w-webflow-badge {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  position: fixed !important;
+  bottom: 0 !important;
+  right: 0 !important;
+}
+</style>
+<style>
+.w-slider,
+.w-slider-mask,
+.w-slide,
+.w-slider-nav {
+  height: auto !important;
+  min-height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.w-slider-nav {
+  display: none !important;
+}
+</style>
+<style>
+.w-container,
+.section,
+.container {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+body {
+  margin: 0 !important;
+}
 </style>
 </head>
 
@@ -418,28 +447,28 @@ Every smile
                     <div class="hero-image_slider-slide w-slide" aria-label="1 of 3" role="group"
                       style="transition: all, opacity 300ms; transform: translateX(0px); opacity: 1; z-index: 18;">
                       <div class="hero-image_slider-slide_inner"><img class="hero-image_slider-slide_image"
-                          src="./Clinova - Webflow HTML website template_files/68f091de1a5160ef83f827ab_home-hero-image.avif"
+                          src="./Clinova - Webflow HTML website template_files/index2.avif"
                           alt="Home hero image"
                           style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; filter: blur(0px);"
                           sizes="(max-width: 1370px) 100vw, 1370px" data-w-id="1e541d19-d3c2-e796-3258-2a82c45157ad"
                           loading="lazy"
-                          srcset="https://cdn.prod.website-files.com/68eddde6588161764dd8cf56/68f091de1a5160ef83f827ab_home-hero-image-p-500.avif 500w, https://cdn.prod.website-files.com/68eddde6588161764dd8cf56/68f091de1a5160ef83f827ab_home-hero-image.avif 1370w">
+                          >
                       </div>
                     </div>
                     <div class="hero-image_slider-slide w-slide" aria-label="2 of 3" role="group"
                       style="transition: all; transform: translateX(0px); opacity: 1; z-index: 16; visibility: hidden;"
                       aria-hidden="true">
                       <div class="hero-image_slider-slide_inner" aria-hidden="true"><img
-                          src="./Clinova - Webflow HTML website template_files/69157aa3575cc76ca10fa3d7_home-hero-image-2.avif"
+                          src="./Clinova - Webflow HTML website template_files/index3.avif"
                           loading="lazy" sizes="(max-width: 1370px) 100vw, 1370px"
-                          srcset="https://cdn.prod.website-files.com/68eddde6588161764dd8cf56/69157aa3575cc76ca10fa3d7_home-hero-image-2-p-500.avif 500w, https://cdn.prod.website-files.com/68eddde6588161764dd8cf56/69157aa3575cc76ca10fa3d7_home-hero-image-2.avif 1370w"
+                          
                           alt="Home hero image" class="hero-image_slider-slide_image" aria-hidden="true"></div>
                     </div>
                     <div class="hero-image_slider-slide w-slide" aria-label="3 of 3" role="group"
                       style="transition: all; transform: translateX(0px); opacity: 1; z-index: 17; visibility: hidden;"
                       aria-hidden="true">
                       <div class="hero-image_slider-slide_inner" aria-hidden="true"><img
-                          src="./Clinova - Webflow HTML website template_files/69157aa3f4f518ffd7f26639_home-hero-image-3.avif"
+                          src="./Clinova - Webflow HTML website template_files/index4.avif"
                           loading="lazy" alt="Home hero image" class="hero-image_slider-slide_image" aria-hidden="true">
                       </div>
                     </div>
@@ -801,7 +830,7 @@ Every smile
                   <div id="w-node-e1d4c9bb-c201-7426-54c7-81ce3309038e-4dd8cf3e" class="home-about_info-card is-image"
                     style="transform: translate3d(0px, 14%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; filter: blur(5px); opacity: 0;">
                     <img
-                      src="./Clinova - Webflow HTML website template_files/68f5ba8b33480946aa8c3b58_home-about-image-1.avif"
+                      src="./Clinova - Webflow HTML website template_files/image1.avif"
                       loading="lazy"
                       style="transform: translate3d(0px, 0px, 0px) scale3d(1.5, 1.5, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; filter: blur(10px);"
                       data-w-id="3f622e7c-2474-8702-e46f-a83ac1ee7cb7" alt="Home about image">
@@ -857,7 +886,7 @@ Every smile
                   <div class="home-about_info-card is-image"
                     style="transform: translate3d(0px, 14%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; filter: blur(5px); opacity: 0;">
                     <img
-                      src="./Clinova - Webflow HTML website template_files/68f5ba8b56a1aa8ba5083f2d_home-about-image-2.avif"
+                      src="./Clinova - Webflow HTML website template_files/image2.avif"
                       loading="lazy"
                       style="transform: translate3d(0px, 0px, 0px) scale3d(1.5, 1.5, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; filter: blur(10px);"
                       data-w-id="2fdc4d18-599e-c260-91e8-153c863be7ea" alt="Home about image">
@@ -1060,7 +1089,7 @@ Orthodontic & Root Canals Centre Kochi</p>
                 </div>
                 <div id="w-node-bc9b6145-b9c7-6809-8bfb-1379b7ac910d-4dd8cf3e" class="home-offer_element-image_wrap">
                   <img
-                    src="./Clinova - Webflow HTML website template_files/68f5c4f47300d779e456cfb0_home-offer-image.avif"
+                    src="./Clinova - Webflow HTML website template_files/image3.avif"
                     loading="lazy"
                     style="transform: translate3d(0px, 0px, 0px) scale3d(1.5, 1.5, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; filter: blur(10px);"
                     data-w-id="dc9d286c-5754-0794-061c-4e0ffd2ee875" alt="Home offer image"
@@ -1688,7 +1717,7 @@ Founder & CEO</div>
                     <div class="testimonial_author">James Carter</div>
                   </div>
                   <div class="testimonial_image-wrap"><img
-                      src="./Clinova - Webflow HTML website template_files/6937aaecb1548fb84c827103_testimonial-image-1.avif"
+                      src="./Clinova - Webflow HTML website template_files/patient.avif"
                       loading="lazy" alt="testimonial image" class="testimonial-image_wrap"></div>
                 </div>
                 <div class="testimonial_item is-item-2"
@@ -1704,7 +1733,7 @@ Founder & CEO</div>
                     <div class="testimonial_author">Andrii Kozak</div>
                   </div>
                   <div class="testimonial_image-wrap"><img
-                      src="./Clinova - Webflow HTML website template_files/6937ab37c2307c9830d98372_4a0ca6456ac751a91a9a97450c670345_testimonial-image-2.jpg"
+                      src="./Clinova - Webflow HTML website template_files/patient1.avif"
                       loading="lazy" alt="testimonial image" class="testimonial-image_wrap"></div>
                 </div>
                 <div class="testimonial_item is-item-3">
@@ -1719,7 +1748,7 @@ Founder & CEO</div>
                     <div class="testimonial_author">Zowdik Pitren</div>
                   </div>
                   <div class="testimonial_image-wrap"><img
-                      src="./Clinova - Webflow HTML website template_files/6937ab3781cf37af186666e1_a84ddaa4729b03cb7342f7784be1adb6_testimonial-image-3.jpg"
+                      src="./Clinova - Webflow HTML website template_files/patient2.avif"
                       loading="lazy" alt="testimonial image" class="testimonial-image_wrap"></div>
                 </div>
               </div>
@@ -1801,7 +1830,7 @@ Founder & CEO</div>
               <div class="home-content_element">
                 <div class="home-content_element-left">
                   <div class="home-content_image-wrap"><img
-                      src="./Clinova - Webflow HTML website template_files/690ac889003e0360b09fa5e4_home-content-image.avif"
+                      src="./Clinova - Webflow HTML website template_files/dental1.avif"
                       loading="lazy"
                       style="transform: translate3d(0px, 0px, 0px) scale3d(1.5, 1.5, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; filter: blur(10px);"
                       data-w-id="56fb5134-6af9-7196-acd3-a1305d81ecbd" alt="Home content image"
@@ -1892,9 +1921,8 @@ Whether you need a routine checkup or a complete smile makeover, our experienced
                               <div class="image-animation-scale"
                                 style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
                                 <img
-                                  src="./Clinova - Webflow HTML website template_files/6906ea573a8e5318f1844ae4_blog-thumbnail-image-9.jpg"
+                                  src="./Clinova - Webflow HTML website template_files/dental2.avif"
                                   loading="lazy" alt="" sizes="100vw"
-                                  srcset="https://cdn.prod.website-files.com/68eddde6588161764dd8cf75/6906ea573a8e5318f1844ae4_blog-thumbnail-image-9-p-500.jpg 500w, https://cdn.prod.website-files.com/68eddde6588161764dd8cf75/6906ea573a8e5318f1844ae4_blog-thumbnail-image-9-p-800.jpg 800w, https://cdn.prod.website-files.com/68eddde6588161764dd8cf75/6906ea573a8e5318f1844ae4_blog-thumbnail-image-9.jpg 814w"
                                   class="image-default image-blur-on-scroll"
                                   style="transform: translate3d(0px, 0px, 0px) scale3d(1.5, 1.5, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; filter: blur(10px);">
                               </div>
@@ -1927,9 +1955,8 @@ Whether you need a routine checkup or a complete smile makeover, our experienced
                               <div class="image-animation-scale"
                                 style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
                                 <img
-                                  src="./Clinova - Webflow HTML website template_files/6906ea2bd4837c2d17e9010e_blog-thumbnail-image-8.jpg"
+                                  src="./Clinova - Webflow HTML website template_files/dental3.avif"
                                   loading="lazy" alt="" sizes="100vw"
-                                  srcset="https://cdn.prod.website-files.com/68eddde6588161764dd8cf75/6906ea2bd4837c2d17e9010e_blog-thumbnail-image-8-p-500.jpg 500w, https://cdn.prod.website-files.com/68eddde6588161764dd8cf75/6906ea2bd4837c2d17e9010e_blog-thumbnail-image-8-p-800.jpg 800w, https://cdn.prod.website-files.com/68eddde6588161764dd8cf75/6906ea2bd4837c2d17e9010e_blog-thumbnail-image-8.jpg 814w"
                                   class="image-default image-blur-on-scroll"
                                   style="transform: translate3d(0px, 0px, 0px) scale3d(1.5, 1.5, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; filter: blur(10px);">
                               </div>
@@ -1963,9 +1990,8 @@ Whether you need a routine checkup or a complete smile makeover, our experienced
                               <div class="image-animation-scale"
                                 style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
                                 <img
-                                  src="./Clinova - Webflow HTML website template_files/6906e9fda4a3097ec682a29f_blog-thumbnail-image-7.jpg"
+                                  src="./Clinova - Webflow HTML website template_files/dental4.avif"
                                   loading="lazy" alt="" sizes="100vw"
-                                  srcset="https://cdn.prod.website-files.com/68eddde6588161764dd8cf75/6906e9fda4a3097ec682a29f_blog-thumbnail-image-7-p-500.jpg 500w, https://cdn.prod.website-files.com/68eddde6588161764dd8cf75/6906e9fda4a3097ec682a29f_blog-thumbnail-image-7-p-800.jpg 800w, https://cdn.prod.website-files.com/68eddde6588161764dd8cf75/6906e9fda4a3097ec682a29f_blog-thumbnail-image-7.jpg 814w"
                                   class="image-default image-blur-on-scroll"
                                   style="transform: translate3d(0px, 0px, 0px) scale3d(1.5, 1.5, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; filter: blur(10px);">
                               </div>
@@ -2026,7 +2052,7 @@ Whether you need a routine checkup or a complete smile makeover, our experienced
                 <div class="margin-bottom margin-11xl">
                   <div class="margin-bottom margin-xl"><a href=""
                       aria-current="page" class="footer_brand w-inline-block w--current"><img
-                        src="./Clinova - Webflow HTML website template_files/logo 2.png"
+                        src="./Clinova - Webflow HTML website template_files/logo.png"
                         loading="lazy" alt="Brand logo" class="footer_logo"></a></div>
                   <div class="margin-bottom margin-lg">
                     <h2 class="footer_title"> <span class="text-highlighted color-tertiary">
@@ -2409,6 +2435,15 @@ Whether you need a routine checkup or a complete smile makeover, our experienced
       });
     }
   </script>
+  <script>
+window.addEventListener("load", function () {
+  const badge = document.querySelector(".w-webflow-badge");
+  if (badge) {
+    badge.remove();
+  }
+});
+</script>
+  
 </body>
 
 </html>
